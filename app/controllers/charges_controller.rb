@@ -117,7 +117,12 @@ end
  #      payment_intent = Stripe::PaymentIntent.create({
  #      amount: amount,
  #      currency: 'inr',
- #      payment_method_types: ['card'],
+        # confirm: true,
+        # automatic_payment_method{
+        #  enabled: true
+         
+        # }
+        #      payment_method_types: ['card'],
  #      description: 'Rails Stripe customer',
  #      receipt_email: params[:stripeEmail],
       

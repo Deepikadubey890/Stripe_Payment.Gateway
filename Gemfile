@@ -54,6 +54,9 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+    
+  # gem "wkhtmltopdf-binary"
+  # gem "wkhtmltopdf-heroku"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -75,3 +78,7 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem "devise" 
 
 gem 'httparty'
+
+gem 'wicked_pdf'
+
+# gem 'wkhtmltopdf-binary'

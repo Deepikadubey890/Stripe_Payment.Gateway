@@ -4,10 +4,19 @@ class PostsController < ApplicationController
   # GET /posts or /posts.json
   def index
     @posts = Post.all
+    respond_to do |format|
+      format.html
+      format.pdf do
+        redirect_to pdf: "Posts",
+               page_size: "A4",
+               template: "posts/post.pdf.erb"
+      end
+    end
   end
 
   # GET /posts/1 or /posts/1.json
   def show
+
   end
 
   # GET /posts/new
